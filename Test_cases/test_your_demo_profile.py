@@ -73,7 +73,7 @@ class test_your_profile:
 
     def test_your_store(self):
         self.driver = webdriver.Chrome()
-        self.test_your_stores = initial_functionality(self.driver)
+        self.test_your_stores = Login(self.driver)
         self.driver.get("https://demo.opencart.com/admin/index.php?route=common/dashboard&user_token=fxEEzcF5fEFbiVPCkehbdhCEoTu9PqCc")
         self.test_your_stores.admin_login_username(self.username)
         self.test_your_stores.admin_login_password(self.password)
